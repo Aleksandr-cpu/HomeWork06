@@ -1,4 +1,4 @@
-package test.task.core.impl;
+package complexNumberCalculator.core.impl;
 
 public class ComplexNumber {
     private double realPart;

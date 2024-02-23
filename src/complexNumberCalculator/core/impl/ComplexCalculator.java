@@ -1,8 +1,7 @@
-package test.task.core.impl;
+package complexNumberCalculator.core.impl;
 
-import test.task.core.ComplexCalculatorProgram;
-import test.task.core.InputHandler;
-import test.task.core.OutputHandler;
+import complexNumberCalculator.core.ComplexCalculatorProgram;
+import complexNumberCalculator.core.OutputHandler;
 
 public class ComplexCalculator implements ComplexCalculatorProgram {
     private ComplexNumber firstNumber;

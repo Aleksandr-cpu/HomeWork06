@@ -1,7 +1,7 @@
-package test.task.core;
+package complexNumberCalculator.core;
 
-import test.task.core.impl.ComplexCalculator;
-import test.task.core.impl.ComplexNumber;
+import complexNumberCalculator.core.impl.ComplexCalculator;
+import complexNumberCalculator.core.impl.ComplexNumber;
 
 public class ApplicationRunner {
     private ComplexCalculator calculator;

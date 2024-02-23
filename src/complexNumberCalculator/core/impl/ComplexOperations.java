@@ -1,6 +1,4 @@
-package test.task.core.impl;
-
-import test.task.core.impl.ComplexNumber;
+package complexNumberCalculator.core.impl;
 
 public class ComplexOperations {
     public static ComplexNumber add(ComplexNumber num1, ComplexNumber num2) {

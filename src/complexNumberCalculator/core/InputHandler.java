@@ -1,6 +1,6 @@
-package test.task.core;
+package complexNumberCalculator.core;
 
-import test.task.core.impl.ComplexNumber;
+import complexNumberCalculator.core.impl.ComplexNumber;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
-package test.task.core;
+package complexNumberCalculator.core;
 
-import test.task.core.impl.ComplexNumber;
+import complexNumberCalculator.core.impl.ComplexNumber;
 
 public class OutputHandler {
     public static void displayResult(ComplexNumber result) {
