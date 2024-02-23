@@ -21,6 +21,7 @@ public class InputHandler {
             return new ComplexNumber(realPart, imaginaryPart);
         } catch (Exception e) {
             logger.severe("Ошибка при чтении комплексного числа: " + e.getMessage());
+            System.err.println("Не удалось прочитать комплексное число. Пожалуйста, попробуйте снова.");
             return null;
         }
     }

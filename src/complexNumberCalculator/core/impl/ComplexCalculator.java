@@ -3,6 +3,7 @@ package complexNumberCalculator.core.impl;
 import complexNumberCalculator.core.ComplexCalculatorProgram;
 import complexNumberCalculator.core.OutputHandler;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ComplexCalculator implements ComplexCalculatorProgram {
@@ -17,7 +18,6 @@ public class ComplexCalculator implements ComplexCalculatorProgram {
         this.operation = operation;
     }
 
-
     private ComplexNumber performOperation() {
         try {
             switch (operation) {
@@ -28,17 +28,20 @@ public class ComplexCalculator implements ComplexCalculatorProgram {
                 case "*":
                     return ComplexOperations.multiply(firstNumber, secondNumber);
                 default:
-                    logger.severe("Неизвестная операция: " + operation);
+                    logger.log(Level.SEVERE, "Неизвестная операция: " + operation);
                     return null;
             }
         } catch (Exception e) {
-            logger.severe("Ошибка при выполнении операции: " + e.getMessage());
+            logger.log(Level.SEVERE, "Ошибка при выполнении операции: " + e.getMessage());
             return null;
         }
     }
+
     @Override
     public void run() {
         ComplexNumber result = performOperation();
-        OutputHandler.displayResult(result);
+        if (result != null) {
+            OutputHandler.displayResult(result);
+        }
     }
 }
